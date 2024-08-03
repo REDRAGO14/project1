@@ -4,7 +4,7 @@ import "./Cart"
 const Cart = () => {
   return (
     <div>
-      Cart page
+      cart page
     </div>
   )
 }
