@@ -1,13 +1,14 @@
 import React from 'react'
 import './Header.css'
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className='header'> 
     <div className="header-contents">
-      <h2>Order Your Food Here</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, praesentium doloremque! Officiis consequatur voluptate ut aut temporibus corporis, rerum amet harum molestias qui omnis! Hic quae explicabo velit veniam quasi!</p>
-      <button>Veiw Menu</button>
+    <Link to={`/product/66dc3b609deaef26025c6ada`}>
+     <button className='button'>See More</button>
+     </Link>
     </div>
 
     </div>

@@ -1,16 +1,25 @@
 .food-item{
     width: 100%;
-    margin: auto;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #00000015;
+    box-shadow: 0px 0px 10px #fffafa15;
     transition: 0.3s;
-    animation: fadeIn 1s;
+    animation: fadeIn 1.6s;
+    
 }
+@keyframes fadeIn {  
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .food-item-image{
     width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
 .food-item-info{
+    width: 100%;
     padding: 20px;
 }
 .food-item-name-rating{
@@ -31,7 +40,7 @@
     color: #676767;
 }
 .food-item-price{
-    color: tomato;
+    color: rgb(193, 34, 6);
     font-size: 22px;
     font-weight: 500;
     margin: 10px 0px;
@@ -49,15 +58,67 @@
 }
 .food-item-counter{
     position: absolute;
+    font-size: 20px;
     bottom: 15px;
     right: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 6px;
-    background-color: white;
+    background-color: rgb(10, 8, 8);
+    border: none;
     border-radius: 50px;
 }
 .food-item-counter img{
     width: 30px;
 }
+.card-btn{
+        background: transparent;
+        font-size: 20px;
+        color: #49557e;
+        border: 1px solid rgb(223, 33, 0);
+        padding: 10px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s;
+}
+.icon{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.card-btn:hover{
+    background-color: #fff4f2;
+    border: 1.5px solid rgb(223, 33, 0);
+}
+.card-btn:hover .icon {
+    
+    margin-left: 10px;
+    
+  }
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .food-item {
+      margin-bottom: 10px; /* Reduce bottom margin */
+    }
+  
+    .food-item-name-rating p {
+      font-size: 16px;
+    }
+  
+    .food-item-name-rating img {
+      width: 40px;
+    }
+  
+    .food-item-price {
+      font-size: 16px;
+    }
+  
+    .food-item-counter {
+      font-size: 16px;
+    }
+  
+    .card-btn {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+  }
